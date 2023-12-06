@@ -4,61 +4,65 @@
     </head>
 <body>
 
-<h1>Potomac Winter Festival</h1>
-<h2>Sat. Dec 16th, 12pm - 3pm</h2>
-<h2>Cherry Hill Picnic Shelter, Falls Church, VA (Next to the Farmer's Market)</h2>
-<h3>Within the Tripps Run Watershed, within the Cameron Run Watershed, within the Middle Occoquan-Potomac Watershed</h3>
+<h1 style="display: none;">Potomac Winter Fest</h1>
+<h2 style="display: none;">A chance to meet key producers and innovators from the Potomac region, giving communities of our watershed a chance to interact with inspiring visions of our future — right from the leaders themselves.</h2>
+<img src="/flyer3.jpg">
+<div>
+<h3>Cherry Hill Park Picnic Shelter</h3>
+<h3>312 Park Avenue, Falls Church VA (Next to Farmer's Market)</h3>
+<h3>Sat. Dec 16th, 12pm - 3pm</h3>
+<!-- <h3>In the Tripps Run Watershed, within the Potomac Watershed</h3> -->
+</div>
 
-<h4>RSVP</h4>
+<br>
 
-<form class="volunteer" id="volunteerForm" hx-trigger="submit" hx-target="#volunteerForm" hx-swap="afterbegin show:top" hx-post="/.netlify/functions/postVolunteer">
-    <!-- <label for="name">Your name *</label>
-    <input name="name"> -->
-    <label for="email">Email</label>
+<h3>RSVP if you're interested, whether you can make it or not!</h3>
+
+<form class="volunteer" id="volunteerForm" hx-trigger="submit" hx-target="#volunteerForm" hx-swap="afterend show:top" hx-post="/.netlify/functions/postVolunteer">
+    <div style="display: inline-block">
+    <label for="email">Email or phone</label>
+    <br>
     <input name="email" type="email">
-    <label>Are you interested in contributing to sustainable activities in the Potomac?  Share some details about yourself and your interest.</label>
-    <!-- <div class="checkboxes">
-        <div class="checkbox-label"><input type="checkbox" name="scriptwriting"><label>Media</label></div>
-        <div class="checkbox-label"><input type="checkbox" name="video_production_editing"><label></label></div>
-        <div class="checkbox-label"><input type="checkbox" name="animation_motion_design"><label>Animation / Motion design</label></div>
-        <div class="checkbox-label"><input type="checkbox" name="illustration/design"><label>Illustration/design</label></div>
-        <div class="checkbox-label"><input type="checkbox" name="voice_acting"><label>Voice acting (must have access to recording set up)</label></div>
-        <div class="checkbox-label"><input type="checkbox" name="camera_acting"><label>Acting on camera</label></div>
-        <div class="checkbox-label"><input type="checkbox" name="music"><label>Music (performance and composition)</label></div>
-        <div class="checkbox-label"><input type="checkbox" name="blog_writing"><label>Blog writing [journalistic]</label></div>
-        <div class="checkbox-label"><input type="checkbox" name="software_web_development"><label>Software/web development</label></div>
-        
-        <div class="checkbox-label"><input type="checkbox" name="translation"><label>Translation</label></div>
-        
-        <div class="checkbox-label"><input type="checkbox" name="research"><label>Research</label></div>
-        
-        <div class="checkbox-label"><input type="checkbox" name="social_media_support"><label>Social media support</label></div>
-        
-        <div class="checkbox-label"><input type="checkbox" name="marketing"><label>Marketing</label></div>
-        
-        <div class="checkbox-label"><input type="checkbox" name="community_growth"><label>Community growth</label></div>
-        
-        <div class="checkbox-label"><input type="checkbox" name="fundraising"><label>Fundraising</label></div>
-        
-        <div class="checkbox-label"><input type="checkbox" name="business_legal_support"><label>Business & legal support</label></div>
-        
-        <div class="checkbox-label"><input type="checkbox" name="admin_support"><label>Admin support</label></div>
-        
-        <div class="checkbox-label"><input type="checkbox" name="other"><label>Other</label></div>
-    </div> -->
-    <p>What is your background? What are your skills and interests? How did you gain them? How do you think your abilities could contribute to Undeniable? What do you find exciting about Undeniable? What is your experience working around the topic of climate change?</p>
+    </div>
+    <button style="display: inline-block" type="submit">Submit</button>
+    <!-- <p>What is your background? What are your skills and interests? How did you gain them? How do you think your abilities could contribute to Undeniable? What do you find exciting about Undeniable? What is your experience working around the topic of climate change?</p>
     <textarea name="details"></textarea>
     <label for="location">What neighborhood are you in?</label>
-    <input name="location">
-    <!-- <label for="language">Your primary language</label>
-    <input name="language">
-    <label for="other_languages">Other languages you speak</label>
-    <input name="other_languages">
-    <label for="links">Relevant social media links (Like Twitter, Instagram, LinkedIn)</label>
-    <textarea name="links"></textarea>
-    <label for="website">Your website link</label>
-    <input name="website" type="url"> -->
-    <button type="submit">Submit</button>
+    <input name="location"> -->
 </form>
 </body>
 </html>
+<style>
+
+    body {
+        max-width: 800px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    * {
+        text-align: center;
+        margin: auto;
+    }
+
+    .exhibitors > div {
+        max-width: 200px;
+    }
+
+    img {
+        max-width: 600px;
+    }
+
+    form {
+        padding-top: 20px;
+    }
+
+    div > h3 {
+        font-style: italic;
+        font-size: 18px;
+    }
+
+    h3 {
+        margin-top: 10px;
+    }
+</style>

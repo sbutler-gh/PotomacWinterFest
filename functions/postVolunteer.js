@@ -60,7 +60,7 @@ for (const key in form) {
         const res = await response.json();
         console.log(res);
 
-        let success = `<p style="color: green; font-weight: 500; font-style: italic;">RSVP successful!  Now share this site and invite others to join!  https://pss.pm/dec16</p>`;
+        let success = `<p style="color: #007ec9; font-weight: 700; margin-top: 19px;">RSVP successful! Now share with others and invite them to join!</p>`;
 
           return {
             statusCode: 200,
