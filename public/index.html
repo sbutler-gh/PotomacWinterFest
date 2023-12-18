@@ -5,7 +5,7 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="Potomac Winter Fest — Dec 16th, 12pm to 3pm (Cherry Hill Park)">
         <meta property="og:description" content="Meet the sustainable leaders of the Potomac region, and get inspired going into 2024!">
-        <meta property="og:image" content="/flyer3.jpg">
+        <meta property="og:image" content="/flyer8.png">
       
         <!-- Twitter Meta Tags -->
         <meta name="twitter:card" content="summary_large_image">
@@ -13,7 +13,7 @@
         <meta property="twitter:url" content="https://potomacwinterfest.com">
         <meta name="twitter:title" content="Potomac Winter Fest — Dec 16th, 12pm to 3pm (Cherry Hill Park)">
         <meta name="twitter:description" content="Meet the sustainable leaders of the Potomac region, and get inspired going into 2024!">
-        <meta name="twitter:image" content="/flyer7.jpg">
+        <meta name="twitter:image" content="/flyer8.png">
       
         <script src="https://unpkg.com/htmx.org@1.9.9" integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX" crossorigin="anonymous"></script>
     </head>
@@ -21,9 +21,11 @@
 
 <h1 style="display: none;">Potomac Winter Fest</h1>
 <h2 style="display: none;">A chance to meet key producers and innovators from the Potomac region, giving communities of our watershed a chance to interact with inspiring visions of our future — right from the leaders themselves.</h2>
-<img src="/flyer7.jpg">
+<img src="/flyer8.png" alt="A flyer with the header Potomac Winter Fest in holiday text.  It says, Come meet sustainable leaders of the Potomac region, interact and explore the possibilities, and get inspired for 2024!  It shows the event location at Cherry Hill Park in Falls Church, VA, 22046, on Sat Dec 16th from 12pm - 3pm.  Next to that, there is a picture of a babydoll sheep with a cartoon callout above it saying 'Plus sheep!'  Below that, in the main part of the graphic, there are cartoon callouts in different colors highlighting aspects of the event along with organizational logos for groups participating.  Fossil-free villages, Resilience Hubs, Offgrid condos with Living Energy Farm and Faith Alliance for Climate Solutions.  Resisting 40 more years of fossil fuels in the DMV with XRDC and Third Act.  Seedbombs and rewilding the land with CCAN, Green Steeze, Audubon Society of Northern Virginia, Plant NOVA Natives, Virginia Native Plant Society, and Lambmowers.com  Textiles and art from invasive plants with Alienweeds.  The Bike Buses of NOVA with the Falls Church Bike Bus and SSAFETY from ARlington.  Local action and groups with Falls Church Forward and Friends of Holmes Run.  At the bottom of the flyer, in blue text with an underline like a hyperlink, there is a shortlink to the event page: pss.pm/dec16" >
 <br>
 <br>
+
+<div class="bg">
 <div>
 <h3>Cherry Hill Park Picnic Shelter</h3>
 <h3>312 Park Avenue, Falls Church VA<br>(Next to Farmer's Market).  <a href="#map">Directions below.</a></h3>
@@ -32,7 +34,7 @@
 
 <br>
 
-<h3>We'd love to have you.  If you're interested, let us know, whether you can make it or not!</h3>
+<h3>We'd love for you to join.  Let us know, whether you can make it or not!</h3>
 
 <form class="volunteer" id="volunteerForm" hx-trigger="submit" hx-target="#volunteerForm" hx-swap="afterend show:top" hx-post="/.netlify/functions/postVolunteer">
     <div style="display: inline-block">
@@ -46,12 +48,15 @@
     <label for="location">What neighborhood are you in?</label>
     <input name="location"> -->
 </form>
+</div>
 <br>
 <br>
-<h4><a id="map" href="#map">Getting to Cherry Hill Park Picnic Shelter</a></h4>
+<h4><a id="map" href="#map" alt="A map of Northern Virginia showing routes to get to the event location, the Cherry Hill Park Picnic Shelter at 312 Park Ave in Falls Church, VA, 22046.  The map shows various routes to get there by Metro, Bus, Bike Trail, and notes that parking is available for cars at 223 Little Falls Street, next to the Falls Church Rec Center.  You can take the Orange line to West Falls Church metro and Bus 28A towards Alexandria, getting off at stop Rt 7 and Virginia Ave.  You can take the Orange or Silver Line to East Falls Church metro and take Bus 28A towards Tysons Corner, getting off at stop Rt 7 ahnd Virginia Ave.  The Rt 7 and Virginia Ave stop is a block away from the park.  Likewise, there are Capital Bikeshare docks at both metro stations which you can take from the metro to the park.  There are also regional bike trails, including the W&OD Trail, which can take you to the Park.  Go to the W&OD Trail and turn south on Oak Street in Falls Church, then turn East on Park Avenue, and continue until you get to Cherry Hill Park on your left.">Getting to Cherry Hill Park Picnic Shelter</a></h4>
 <br>
 <img src="/map.jpg">
-
+<br>
+<br>
+<p><em><a href="https://www.google.com/maps/dir//Cherry+Hill+Park,+312+Park+Ave,+Falls+Church,+VA+22046/@38.8861348,-77.1732801,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89b7b4c223834065:0xb72e247b8ca71fe4!2m2!1d-77.1732801!2d38.8861348?entry=ttu">Pull up directions</a></em></p>
 </body>
 </html>
 <style>
@@ -72,7 +77,8 @@
     }
 
     img {
-        max-width: 600px;
+        max-width: 97%;
+        width: 600px;
     }
 
     form {
@@ -87,5 +93,17 @@
 
     h3 {
         margin-top: 10px;
+    }
+
+    div.bg {
+        padding: 10px;
+        border: solid 3px black;
+    }
+
+    @media (max-width: 700px) {
+        body {
+            padding-top: 10px !important;
+            padding-bottom: 20px !important;
+        }
     }
 </style>

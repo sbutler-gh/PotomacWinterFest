@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/htmx.org@1.9.9" integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX" crossorigin="anonymous"></script>
+    </head>
+<body>
+
+<h1>Potomac Watershed Winter Festival</h1>
+<h2>Sat. Dec 16th, 12pm - 3pm</h2>
+<h2>Cherry Hill Picnic Shelter, Falls Church, VA (Next to the Farmer's Market)</h2>
+<h3>Within the Tripps Run Watershed, within the Cameron Run Watershed, within the Middle Occoquan-Potomac Watershed</h3>
+
+<h4>RSVP</h4>
+<label for="email">Email</label>
+<input name="email" type="email"><button>Submit</button>
+<br>
+<br>
+
+<div class="exhibitors" style="display: flex; flex-wrap: wrap;">
+    <div>
+        <h4>Fossil-free communities, Energy Literacy Workshop, and Offgrid Condo with <bold>Living Energy Farms</bold></h4>
+        <h4>Living Energy Farms</h4>
+    </div>
+
+    <div>
+        <h4>Make your own seedbombs, and rewild the land with native plants, with <bold>CCAN</bold></h4>
+        <h4>CCAN</h4>
+    </div>
+
+    <div>
+        <h4>Ride the bike bus!  Learn from students and orgs riding the future, with <bold>FC Bike Bus</bold> & <bold>SSAFETY</bold></h4>
+        <h4>FC Bike Bus, SSAFETY</h4>
+    </div>
+
+    <div>
+        <h4>Meet the elders on the frontlines of climate resistance, and get involved for the land we call home.</h4>
+        <h4>Third Act, POWHR</h4>
+    </div>
+
+    <div>
+        <h4>Invasive textiles, art, and local economies and fabrication with <bold>Alien Weeds</bold></h4>
+        <h4>Alien Weeds</h4>
+    </div>
+
+    <div>
+        <h4>Learn about the DC Gas Campaign, from the people fighting to free our region from 40 years of fossil-fuel lock in.  <bold>XRDC</bold></h4>
+        <h4>Alien Weeds</h4>
+    </div>
+
+    <div>
+        <h4>Can you read the land?  Do you know how this place works and lives, all around us?  Learn with Audubon at Home, VNPS, and Plant NOVA Natives.</h4>
+        <h4>Alien Weeds</h4>
+    </div>
+
+    <div>
+        <h4>Solar sanctuaries and resilience hubs.  Retrofitting buildings.  Suing Virginia to keep it on its climate goals.  <bold>Faith Alliance for Climate Solutions</bold></h4>
+        <h4>Alien Weeds</h4>
+    </div>
+
+    <div>
+        <h4>Sheep?  <em>There would be, but no local municipality has a public herd for landscaping and park management.  Let them know they should!</em></h4>
+        <h4>Alien Weeds</h4>
+    </div>
+
+    <div>
+        <h4>A landscaping service that works with the land, from people in touch with it.  Need some help?  <bold>The Green Steeze Tent</bold></h4>
+        <h4>Alien Weeds</h4>
+    </div>
+
+    <div>
+        <h4>Learn about the gas campaign, and resistance to a project that would lock DC to fossil fuels for 40 more years</h4>
+        <h4>XRDC</h4>
+    </div>
+
+    <div>
+        <h4>Native plant and landscape literacy with </h4>
+        <h4>XRDC</h4>
+    </div>
+
+</div>
+
+
+<br>
+<br>
+
+<form class="volunteer" id="volunteerForm" hx-trigger="submit" hx-target="#volunteerForm" hx-swap="afterbegin show:top" hx-post="/.netlify/functions/postVolunteer">
+    <!-- <label for="name">Your name *</label>
+    <input name="name"> -->
+    <label for="email">Email</label>
+    <input name="email" type="email">
+    <label>Are you interested in contributing to sustainable activities in the Potomac?  Share some details about yourself and your interest.</label>
+    <!-- <div class="checkboxes">
+        <div class="checkbox-label"><input type="checkbox" name="scriptwriting"><label>Media</label></div>
+        <div class="checkbox-label"><input type="checkbox" name="video_production_editing"><label></label></div>
+        <div class="checkbox-label"><input type="checkbox" name="animation_motion_design"><label>Animation / Motion design</label></div>
+        <div class="checkbox-label"><input type="checkbox" name="illustration/design"><label>Illustration/design</label></div>
+        <div class="checkbox-label"><input type="checkbox" name="voice_acting"><label>Voice acting (must have access to recording set up)</label></div>
+        <div class="checkbox-label"><input type="checkbox" name="camera_acting"><label>Acting on camera</label></div>
+        <div class="checkbox-label"><input type="checkbox" name="music"><label>Music (performance and composition)</label></div>
+        <div class="checkbox-label"><input type="checkbox" name="blog_writing"><label>Blog writing [journalistic]</label></div>
+        <div class="checkbox-label"><input type="checkbox" name="software_web_development"><label>Software/web development</label></div>
+        
+        <div class="checkbox-label"><input type="checkbox" name="translation"><label>Translation</label></div>
+        
+        <div class="checkbox-label"><input type="checkbox" name="research"><label>Research</label></div>
+        
+        <div class="checkbox-label"><input type="checkbox" name="social_media_support"><label>Social media support</label></div>
+        
+        <div class="checkbox-label"><input type="checkbox" name="marketing"><label>Marketing</label></div>
+        
+        <div class="checkbox-label"><input type="checkbox" name="community_growth"><label>Community growth</label></div>
+        
+        <div class="checkbox-label"><input type="checkbox" name="fundraising"><label>Fundraising</label></div>
+        
+        <div class="checkbox-label"><input type="checkbox" name="business_legal_support"><label>Business & legal support</label></div>
+        
+        <div class="checkbox-label"><input type="checkbox" name="admin_support"><label>Admin support</label></div>
+        
+        <div class="checkbox-label"><input type="checkbox" name="other"><label>Other</label></div>
+    </div> -->
+    <p>What is your background? What are your skills and interests? How did you gain them? How do you think your abilities could contribute to Undeniable? What do you find exciting about Undeniable? What is your experience working around the topic of climate change?</p>
+    <textarea name="details"></textarea>
+    <label for="location">What neighborhood are you in?</label>
+    <input name="location">
+    <!-- <label for="language">Your primary language</label>
+    <input name="language">
+    <label for="other_languages">Other languages you speak</label>
+    <input name="other_languages">
+    <label for="links">Relevant social media links (Like Twitter, Instagram, LinkedIn)</label>
+    <textarea name="links"></textarea>
+    <label for="website">Your website link</label>
+    <input name="website" type="url"> -->
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
+<style>
+
+    body {
+        background: black;
+    }
+    * {
+        text-align: center;
+        margin: auto;
+        color: #e4e4e4;
+    }
+
+    .exhibitors > div {
+        max-width: 200px;
+    }
+</style>
